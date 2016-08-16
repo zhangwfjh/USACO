@@ -82,11 +82,8 @@ int main() {
     int n = pow(3, size);
     for (size_t i = 0; i < n; ++i) {
     	string name = "";
-    	size_t k = i;
-    	for (size_t j = 0; j < size; ++j) {
+    	for (size_t j = 0, k = i; j < size; ++j, k /= 3)
     		name = keypad[num[size-1-j]][k % 3] + name;
-    		k /= 3;
-    	}
     	if (find(dict.begin(), dict.end(), name) != dict.end()) hitted.push_back(name);
     }
     if (hitted.empty()) 
