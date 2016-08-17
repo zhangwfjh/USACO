@@ -1,6 +1,6 @@
 /*
 ID: zhangwf3
-PROG: test
+PROG: template
 LANG: C++
 */
 
@@ -11,8 +11,8 @@ LANG: C++
 using namespace std;
 
 int main() {
-    ofstream fout ("test.out");
-    ifstream fin ("test.in");
-
+    ofstream fout ("template.out");
+    ifstream fin ("template.in");
+    
     return 0;
 }
