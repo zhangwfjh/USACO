@@ -1,2 +1,2 @@
-# USACO
-Solutions of USACO problems.
+# usaco
+Solutions to USACO problems in C++.
