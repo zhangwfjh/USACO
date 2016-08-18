@@ -38,7 +38,7 @@ int main() {
     		balance[receiver] += money / num;
     	}
     }
-    for (vector<string>::const_iterator it = names.begin(); it != names.end(); ++it)
+    for (vector<string>::iterator it = names.begin(); it != names.end(); ++it)
     	fout << *it << " " << balance[*it] << endl;
     return 0;
 }

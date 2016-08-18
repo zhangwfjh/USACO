@@ -25,7 +25,7 @@ int main() {
     sort(hill.begin(), hill.end());
 	for (size_t h = 0; h <= 100; ++h) {
 		int Xsq = 0;
-		for (vector<int>::const_iterator it = hill.begin(); it != hill.end(); ++it)
+		for (vector<int>::iterator it = hill.begin(); it != hill.end(); ++it)
 			if (*it < h) Xsq += sq(h - *it);
 			else if (*it > h + 17) Xsq += sq(*it - (h + 17));
 		if (Xsq < cost) cost = Xsq;

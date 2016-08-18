@@ -49,7 +49,7 @@ int main() {
     if (hitted.empty()) 
     	fout << "NONE" << endl;
     else
-    	for (vector<string>::const_iterator it = hitted.begin(); it != hitted.end(); ++it)
+    	for (vector<string>::iterator it = hitted.begin(); it != hitted.end(); ++it)
     		fout << *it << endl;
 
     return 0;
@@ -89,7 +89,7 @@ int main() {
     if (hitted.empty()) 
     	fout << "NONE" << endl;
     else
-    	for (vector<string>::const_iterator it = hitted.begin(); it != hitted.end(); ++it)
+    	for (vector<string>::iterator it = hitted.begin(); it != hitted.end(); ++it)
     		fout << *it << endl;
 
     return 0;

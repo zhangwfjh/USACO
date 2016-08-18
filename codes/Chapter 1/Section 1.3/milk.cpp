@@ -35,7 +35,7 @@ int main() {
     	sup.push_back(supplier(p, a));
     }
     sort(sup.begin(), sup.end());
-    for (vector<supplier>::const_iterator it = sup.begin(); it != sup.end(); ++it)
+    for (vector<supplier>::iterator it = sup.begin(); it != sup.end(); ++it)
     	if (it->amount <= N) {
     		cost += it->buyall();
     		N -= it->amount;
