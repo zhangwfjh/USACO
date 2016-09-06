@@ -18,7 +18,7 @@ public:
 	supplier(int p, int a) : price(p), amount(a) {}
 	int buy(int num) const { return num * price; }
 	int buyall() const { return buy(amount); }
-	bool operator<(const supplier& s) {return price < s.price; }
+	bool operator<(const supplier& s) { return price < s.price; }
 };
 
 int main() {
