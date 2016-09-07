@@ -20,12 +20,12 @@ int main() {
 	// Dynamic programming on both S and N
     if (N % 4 == 1 || N % 4 == 2) { fout << 0 << endl; return 0; }
     int S = N * (N+1) / 4;
-    ulong count[N+1][S+1] = {};
+    unsigned long count[N+1][S+1] = {};
     count[0][0] = 1;
     for (size_t n = 1; n <= N; ++n)
     	for (size_t s = 0; s <= S; ++s) {
 			count[n][s] = count[n-1][s];
-    		if (s >= n)	count[n][s] += count[n-1][s-n]; 
+    		if (s >= n)	count[n][s] += count[n-1][s-n];
 		}
     fout << count[N][S]/2 << endl;
 
@@ -43,7 +43,7 @@ int main() {
     }
 	*/
 
-	// Brute force 2 with dynamic programming on S only: memory overflow
+	// Brute force 2 with dynamic programming on P(N) only: memory overflow
     /*
     long S = N * (N+1) / 4;
     int sum[1 << N-1] = {0};
@@ -52,7 +52,7 @@ int main() {
     while (!subset.empty()) {
     	long set = subset.front();
     	subset.pop();
-    	for (size_t i = 0; i < N; ++i) 
+    	for (size_t i = 0; i < N; ++i)
     		if (set & 1 << i) {
     			if (sum[set] == -1) {
 	    			sum[set] = sum[set - (1 << i)] + i + 1;

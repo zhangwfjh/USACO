@@ -20,7 +20,7 @@ int main() {
     bool flag = false;
     fin >> N >> M;
     const int size = 2*M*M + 1;
-    bool bisquare[size] = {false};
+    bool bisquare[size] = { };
     for (int p = 0; p <= M; ++p)
         for (int q = p; q <= M; ++q)
             bisquare[p*p + q*q] = true;

@@ -11,7 +11,7 @@ LANG: C++
 
 using namespace std;
 
-bool status[21][21][21] = {false};
+bool status[21][21][21] = { };
 int bucket[3];
 int full[3];
 vector<int> amount;

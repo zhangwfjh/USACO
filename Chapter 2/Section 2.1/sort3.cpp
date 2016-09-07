@@ -26,7 +26,7 @@ int main() {
         }
     }
 
-    size_t derange[4][4] = {0};
+    size_t derange[4][4] = { };
     for (size_t i = 0; i < N; ++i) 
          if (i < ones)      ++derange[1][num[i]];
     else if (i < ones+twos) ++derange[2][num[i]];

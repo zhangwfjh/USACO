@@ -51,7 +51,7 @@ int main() {
     	for (size_t i = 0; i < 4; ++i)
     		fout << primedigit[i] << endl;
     else {
-    	int digits[N] = {0};
+    	int digits[N] = { };
     	for (size_t i = 0; i < 4; ++i) {
     		digits[0] = primedigit[i];
     		filldigits(digits, 1);

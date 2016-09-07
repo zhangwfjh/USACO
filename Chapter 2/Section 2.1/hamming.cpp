@@ -16,7 +16,7 @@ int main() {
     size_t N, B, D;
     fin >> N >> B >> D;
 
-    size_t codewords[N] = {0};
+    size_t codewords[N] = { };
     for (size_t i = 1, n = 1; i < 1<<B && n < N; ++i) {
       bool next = true;
       for (size_t k = 0; k < n; ++k) {

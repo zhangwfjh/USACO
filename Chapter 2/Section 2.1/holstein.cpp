@@ -26,7 +26,7 @@ int main() {
         fin >> feed[g][v];
     int select;
     int amount[V];
-    bool checked[1<<G] = {false};
+    bool checked[1<<G] = { };
     queue<int> yield;
     yield.push(0);
     while (true) {
