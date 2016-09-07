@@ -1,2 +1,11 @@
-# C++ output file
+# Ignore all
+*
+
+# Unignore all directories
+!*/
+
+# Unignore all with extensions
+!*.*
+
+# Ignore C++ executables
 *.out
