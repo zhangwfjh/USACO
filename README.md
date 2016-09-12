@@ -1,3 +1,3 @@
 # USACO
 
-Solutions to USACO problems in C++.
+Solutions to USACO problems in C++, written in STL.
