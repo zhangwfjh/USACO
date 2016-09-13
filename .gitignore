@@ -7,8 +7,9 @@
 # Unignore all with extensions
 !*.*
 
-# Ignore test input files
+# Ignore test files
 *.in
+test.cpp
 
 # Ignore C++ executables
 *.out
