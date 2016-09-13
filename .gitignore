@@ -8,8 +8,6 @@
 !*.*
 
 # Ignore test files
-*.in
 test.cpp
-
-# Ignore C++ executables
+*.in
 *.out
